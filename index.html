@@ -1,24 +1,20 @@
 <html>
-  <script src="https://briskminds75-dev-ed.lightning.force.com/lightning/lightning.out.js"></script>
-    <script>
-      $Lightning.use(
-            "c:AppTouse", 
-            function() { 
-                $Lightning.createComponent(
-                    "c:LWCOutsideSalesforceOrg", 
-                    {objectName: "Contact"}, 
-                    "LightningAppDivId" ,
-                    function(cmp) {
-                    console.log("LWC component was created");
-                  }
-                );
-          },
-          'https://briskminds75-dev-ed.my.site.com'
-        );
-    </script>
-  <body>
-    <iframe>
-      <div id="LightningAppDivId"></div>
-    </iframe>
-  </body>
+  <script src="https://https://briskminds75-dev-ed.my.site.com/lightning/lightning.out.js"></script>
+  <div id="LightningAppDivId"></div>
+  <script>
+    $Lightning.use(
+          "c:AppTouse", 
+          function() { 
+              $Lightning.createComponent(
+                  "c:LWCOutsideSalesforceOrg", 
+                  {objectName: "Contact"}, 
+                  "LightningAppDivId" ,
+                  function(cmp) {
+                  console.log("LWC component was created");
+                }
+              );
+        },
+        'https://briskminds75-dev-ed.my.site.com'
+      );
+  </script>
 </html>
