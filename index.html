@@ -1,23 +1,21 @@
 <html>
   <script src="https://briskminds75-dev-ed.my.site.com/lightning/lightning.out.js"></script>
   Hello 
-  <iframe>
-    <div id="LightningAppDivId"></div>
-    <script>
-      $Lightning.use(
-            "c:AppTouse", 
-            function() { 
-                $Lightning.createComponent(
-                    "c:LWCOutsideSalesforceOrg", 
-                    {}, 
-                    "LightningAppDivId" ,
-                    function(cmp) {
-                      console.log("LWC component was created");
-                  }
-                );
-          },
-          'https://briskminds75-dev-ed.my.site.com'
-        );
-    </script>
-  </iframe>
+  <div id="LightningAppDivId"></div>
+  <script>
+    $Lightning.use(
+          "c:AppTouse", 
+          function() { 
+              $Lightning.createComponent(
+                  "c:LWCOutsideSalesforceOrg", 
+                  {}, 
+                  "LightningAppDivId" ,
+                  function(cmp) {
+                    console.log("LWC component was created");
+                }
+              );
+        },
+        'https://briskminds75-dev-ed.my.site.com'
+      );
+  </script>
 </html>
